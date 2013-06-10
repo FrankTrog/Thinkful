@@ -1,0 +1,159 @@
+/* stylesheet for Google homepage */
+
+/* CSS Reset http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*	{
+	font-family: 'Open Sans';
+	}
+	
+div {
+	font-family:Arial;
+}
+	
+	
+
+
+#blackmenu {
+	background-color:black;
+	color:gray;
+	font-family:Arial;
+	font-weight:800;
+	height:30px;
+	width:100%;
+}
+
+#blackform ul, #footer ul {
+	list-style-type:none;
+}
+
+#blackmenu ul li, #footer ul li  {
+	float: left;
+	margin:4px 15px 0 0;
+}
+
+#login {
+	position:relative;
+	float:right;
+	clear:both;
+	top:20px;
+	color:#989898;
+}
+#logo {
+	width:275px; margin: 0 auto 0 auto;
+	padding-top:200px;
+}
+
+#underSearch {
+	margin: 0 auto 0 auto; 
+	
+
+}
+
+
+
+#underSearch input {
+	position:absolute;
+	left: 65%;
+	top:50px;
+	font-size:16px;
+}
+
+#underSearch input.google {
+	margin-left: -150px;
+}
+
+#text {
+	position:relative;
+
+}
+
+#searchForm {
+	width:600px; 
+	margin: 0 auto 0 auto;
+	clear:both;
+}
+
+.row {
+	width:600px; 
+	margin: 50px auto 0 auto; 
+	position:relative;
+	
+}
+
+#searchForm input {
+	width:700px;
+	height:30px;
+	font-size:25px;
+	font-family:Verdana, sans-serif;
+	border:1px solid #b2aeab;
+	
+}
+
+#underSearch input {
+	border-radius:0px;
+	height:30px;
+	padding:5px;
+	background-color:#eaebec;
+	color:#333845;
+	font-weight:bold;
+	margin: 0 auto 0 auto; 
+	
+}
+
+#footer {
+	position:fixed;
+	right:0px;
+	bottom:10px;
+	font-family:Verdana;
+	color:#989898;
+	clear:both;
+	list-style-type:none;
+	
+}
