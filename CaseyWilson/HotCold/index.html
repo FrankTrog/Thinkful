@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<script src="./jquery-1.10.2.js"></script> 
+		<script src="application.js"></script> 
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<title>Hot or Cold?</title>
+	</head>
+	<body>
+		<div id="main-body">
+			<header>
+				<img src="./images/brainiac.png">
+				<h2>Brainiac Games Inc.</h2>
+			</header>
+			<h1>Think You're Smart?</h1>
+			<h2>Give me a whirl. Pick a number. Any number. 1 to 100.</h2>
+			<div id="meter">
+				<img id="gauge" src="./images/gauge.png">
+				<img class="arrow" id="right-arrow" src="./images/right_arrow.png">
+				<img class="arrow" id="hot-arrow" src="./images/hot_arrow.png">
+				<img class="arrow" id="cold-arrow" src="./images/cold_arrow.png">
+			</div>
+			<div id="outputSpace">
+				
+				<h2 class="output-message" id="Right">Congratulations, you chose right! :)</h2>
+				<h2 class="output-message" id="out-of-range">Make sure to enter a number between 1 and 100</h2>
+				<h2 class="output-message" id="tooHigh-warmer">You're warmer :), but chose too high. Try again!</h2>
+				<h2 class="output-message" id="tooHigh-colder">You chose too high and are even colder :(. Try again.</h2>
+				<h2 class="output-message" id="tooHigh">Too high :(! Try again.</h2>
+				<h2 class="output-message" id="tooLow-warmer">You're warmer :), but chose too low. Try again!</h2>
+				<h2 class="output-message" id="tooLow">Too low :(! Try again!</h2>
+				<h2 class="output-message" id="tooLow-colder">Too low and even colder :(. Try again!</h2>
+				<h2 class="output-message" id="NaN">Make sure to enter a NUMBER (not a word!) between 1 and 100</h2>
+			</div>
+			<div id="buttonArea">
+				<input type="text" class="textBox" id="numberField" onfocus="{this.value = ''}" onblur = "{this.value = ''}" value= " " onkeydown="if (event.keyCode == 13) document.getElementById('Button1').click();"/>
+           		<input type="button" onfocus="{this.value = ''}" id="Button1" value="Go!" onclick="submit();"/>
+			</div>
+		</div>
+	</body>
+</HTML>
