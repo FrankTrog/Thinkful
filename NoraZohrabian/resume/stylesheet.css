@@ -1,0 +1,86 @@
+#header {
+	background-color: white;
+	margin-top: -60px;
+}
+#name {
+	font-family: Arial;
+	font-size: 65px;
+}
+.left {
+	font-family: Arial;
+	font-size: 14px;
+	float: left;
+	font-weight: bold;
+	margin-top: -65px;
+	line-height: 40%;
+	position: relative;
+	width: 20%;
+	margin-bottom: 10px;
+}
+#email {
+	letter-spacing: -1px;
+}
+#portfolio {
+	letter-spacing: -1px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.right {
+	font-family: Arial;
+	font-size: 14px;
+	margin-top: -55px;
+	line-height: 40%;
+	position: relative;
+	width: 80%;
+	margin-bottom: 10px;
+	float: right;
+}
+h4 {
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 3px;
+}
+#callout {
+	font-weight: bold;
+	font-style: italic; 
+	display: inline;
+	margin-top: 8px;
+}
+#details {
+	display: inline;
+}
+.break {
+	margin-bottom: 8px;
+}
+.space {
+	margin-bottom: 27px;
+}
+.space2 {
+	margin-bottom: 20px;
+}
+.jobline {
+	width: 600px;
+	position: relative;
+	margin-bottom: -5px;
+	margin-top: -8px;
+}
+#job {
+	display: inline;
+	float: left;
+	position: relative;
+}
+.dates {
+	display: inline;
+	text-align: right;
+	float: right;
+	position: relative;
+	
+}
+.description {
+	width: 600px;
+	line-height: 145%;
+	position: relative;
+	margin-top: 45px;
+}
