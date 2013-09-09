@@ -75,15 +75,12 @@ function submit(){
 		
 		if(previous !== null && Math.abs(randomNumber-current)<Math.abs(randomNumber-previous)){
 			document.getElementById("tooHigh-warmer").style.display='block';
-			document.getElementById("right-arrow").style.display = 'inline-block';
 		}
 		else if (previous !== null && Math.abs(randomNumber-current)>Math.abs(randomNumber-previous)){
 			document.getElementById("tooHigh-colder").style.display='block';
-			document.getElementById("cold-arrow").style.display = 'inline-block';
 		}
 		else{
 			document.getElementById("tooHigh").style.display='block';
-			document.getElementById("cold-arrow").style.display = 'inline-block';
 		}
 	}
 	
