@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+<html>
+	<head>
+		<title>An HTML test page</title>
+	</head>
+	<body>
+		<h1>An HTML test page</h1>
+		
+		<h2>Text formatting</h2>
+		<p>This is a paragraph with <em>emphasized</em>, <strong>strongly emphasized</strong> text, and a <a href="">hyperlink</a>.</p>
+		
+		<h2>Ordered lists</h2>
+		<ol>
+			<li>This is an ordered list item</li>
+			<li>This is another ordered list item</li>
+		</ol>
+		
+		<h2>Unordered lists</h2>
+		<ul>
+			<li>This is an unordered list item</li>
+			<li>This is another unordered list item</li>
+		</ul>
+		
+		<h2>Definition lists</h2>
+		<dl>
+			<dt>The first term</dt>
+			<dd>The first definition of the first term</dd>
+			<dd>The second definition of the first term</dd>
+			<dt>The second term</dt>
+			<dd>The only definition of the second term</dd>
+		</dl>
+		
+		<h2>Tables</h2>
+		<table>
+			<tbody>
+				<tr>
+					<td>Table cell 1-1</td>
+					<td>Table cell 1-2</td>
+				</tr>
+				<tr>
+					<td>Table cell 2-1</td>
+					<td>Table cell 2-2</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2>Line breaks</h2>
+		<p>
+			With poetic license
+			<br/>
+			The line break tag becomes valid
+		</p>
+		
+		<h2>Preformatted text</h2>
+<pre>In this part of the document, whitespace matters
+    For instance, indentation and double  spaces are possible</pre>
+	</body>
+</html>
