@@ -10,15 +10,15 @@
 			}
 		</style>
 		<style>
-		.one li:nth-child(even){ color:blue; }
-		.two li:nth-child(1n+3){ color:blue;}
+		.one .red + li{ color:blue; }
+		.two .red-two ~ li{ color:blue;}
 		.three > li {color:blue;}
 		.four li[title*="blue"]{ color:blue; }
-		.five li:last-of-type{color:blue;}
+		.five li:last-child{color:blue;}
 		.six li:nth-child(even){color:blue;}
 		.seven li:nth-child(2n+3){color:blue;}
-		.eight li:nth-child(3){color:blue;}
-		.nine:first-line{color:blue;}  
+		.eight li:not(.red){color:blue;}
+		.nine:first-line{color:blue;}  		
 		</style>
 	</head>
 	<body>
