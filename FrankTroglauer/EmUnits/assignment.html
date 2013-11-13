@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>EM units</title>
+	</head>
+	<body>
+		<h1>EM units</h1>
+		
+		<p>In this assignment, we will look at what EM units are how and they are used. First of all, a disclaimer: some people write "em" and pronounce it like the letter M, but for the sake of clarity I always write "EM" and pronounce it letter by letter.</p>
+		
+		<h2>Reading material</h2>
+		<ul>
+			<li><a href="http://www.impressivewebs.com/understanding-em-units-css/">Impressive Webs: Understanding em Units in CSS</a></li>
+			<li><a href="http://alistapart.com/article/howtosizetextincss">A List Apart: How to Size Text in CSS</a></li>
+			<li><a href="http://www.w3.org/Style/Examples/007/units.en.html">W3: EM, PX, PT, CM, IN…</a></li>
+			<li><a href="http://www.w3.org/WAI/GL/css2em.htm">W3: The amazing em unit and other best practices</a></li>
+		</ul>
+		
+		<h2>Assignment</h2>
+		
+		<p>In this assignment, we will use EMs to size text and other items. In order to measure your understanding of how EMs are calculated, your goal will be to achieve specific pixel dimensions using only EMs. When you're using EMs in the real world, you don't have to worry about how many pixels they will result in (although a lot of people still do). For this assignment, the main goal is to be able to accurately size elements with EMs, and that's why we'll be measuring pixels to evaluate your work.</p>
+		
+		<p>In the CSS that you write for this assignment, you are only allowed to EM units. In order to see how many pixels they result in, use the developer tools:</p>
+		
+		<ul>
+			<li>To see the pixel size of text that you have sized with EMs, select the element and then look for <code>font-size</code> under the "Computed" tab of the "Elements" section in the developer tools.</li>
+			<li>To see the pixel width of an element that you have sized with EMs, select the element and then either look for <code>font-size</code> under the "Computed" tab or look at the illustration of the element under either "Styles" or "Computed".</li>
+		</ul>
+		
+		<p><em>Note: In order to avoid scaling issues, make sure that the page zoom is set to 100% (the default). <kbd>Ctrl + 0</kbd> achieves this in Google Chrome on Windows.</em></p>
+		
+		<ol>
+			<li>
+				Open <code>size.xml</code> in your browser, then write rules in <code>size.css</code> that result in the specified pixel sizes. Remember that you are only allowed to use EM units in your CSS.
+				<ul>
+					<li>What problem do you run into when sizing the nested list item?</li>
+					<li>Does it matter?</li>
+					<li>Is there a way around it?</li>
+				</ul>
+			</li>
+			<li>
+				Open <code>line.xml</code> in your browser, then write <em>a single rule set</em> (one set of curly braces) in <code>line.css</code> that gives each paragraph a line length of roughly 12-13 words.
+				<ul>
+					<li>Can you think of ways to do this with other units than the EM?</li>
+				</ul>
+			</li>
+		</ol>
+	</body>
+</html>

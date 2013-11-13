@@ -1,0 +1,43 @@
+* {
+	display: block;
+	margin: 10px;
+}
+
+head {
+	display: none;
+}
+
+html {
+	/* The default in most browsers, but let's set it explicitly. */
+	font-size: 16px;
+}
+
+li {
+	display: list-item;
+}
+
+div {
+	background-color: orange;
+}
+
+h1{
+	font-size:1.7em;
+}
+
+h2{
+	font-size:1.3em;
+}
+
+p{
+	font-size:0.8em;
+}
+
+li{
+	font-size:0.95em;
+}
+ul ul li{
+	font-size:0.8em;
+}
+div{
+	width:30em;
+}
