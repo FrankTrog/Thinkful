@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Verb';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://dl.dropboxusercontent.com/u/66196232/apiHack/fonts/VerbLight.otf);
+}
+
+@font-face {
+  font-family: 'Treb';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://dl.dropboxusercontent.com/u/66196232/apiHack/fonts/trebuc.ttf);
+}
+
+body {
+	font-family: 'Treb';
+	text-align: center;
+	background-color: #404040;
+
+}
+
+#top {
+	font-family: 'Verb', sans-serif;
+	font-size: 50px;
+	padding: 5px 0 5px 0;
+	background-color: white;
+	padding: 10px 0 10px;
+	border-bottom: 5px solid #074659;
+	text-align: left;
+	background-color: #b0afaf;
+}
+
+#words {
+	color: white;
+	text-align: left;
+	width: 550px; 
+}
+
+
+h2{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#container {
+	width: 550px;
+	margin-top: 75px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #EEEEEE;
+	padding:  15px 0 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+	-webkit-box-shadow: 6px 8px 15px rgba(20, 17, 20, 0.8);
+	-moz-box-shadow:    6px 8px 15px rgba(20, 17, 20, 0.8);
+	box-shadow:         6px 8px 15px rgba(20, 17, 20, 0.8);
+	text-align: center;
+}
+
+#results {
+	font-weight: bold;
+	padding: 5px 0 5px;
+	text-align: left;
+	margin-left: 8px;
+}
+
+#ajax {
+	text-align: right;
+	padding: 5px 5px 0 0
+}
+
+
+
+input {
+	display: inline;
+}
+
+form{
+	display: inline;
+}
+
+li{
+	margin-left: 8px;
+}
+
+#finePrint {
+	position: absolute;
+	bottom: 0;
+	text-align: right;
+}
+
+#races {
+	text-align: left;
+}
+
+#householdSize {
+	text-align: left;
+}
+
+ul {
+	text-align: left;
+}
+
+#underline{
+	text-decoration: underline;
+	padding: 5px 0 5px 0;
+}
