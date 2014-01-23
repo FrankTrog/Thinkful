@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Hot and Cold Game with HTML Interface</title>
+      <script type="text/javascript" src="hotcold2.js">
+	 
+      </script>
+    </head>
+    <body onload="overAll()";>
+	   <form id="game">
+	      <input type="text" id="userguess" onclick="hotCold()"; />
+		  <!--
+          it seems that either ondblclick or click works in this case; 
+          ALSO, when I press enter after entering a guess in the text box, the program starts over and does not submit the answer - why is that? 
+          do i need to use an event name for pressing enter so that pressing enter DOES submit the guess?
+          -->
+          <!--COMMENT - FRANK
+          Answer #1
+          ondblclick only triggers on a dblclick so it isn't preferred. 
+          Click isn't either as you really should trigger it on enter
+          I suggest using functions and event listeners within the .js file rather than setting onclick or ondblclick attributes.
+          
+          Answer #2
+          When you use a form pressing enter in an input is built into the browser as submitting the form which was built to send information to another page.
+          Essentially the browser reloads the page.
+          We have to stop this behavior using event.preventDefault(); within the function called when enter is pressed in the input. 
+          $('input').keypress(function(e){
+          	event.preventDefault();
+          });
+          -->
+		  
+	      <!--
+          for some reason using a Submit button to submit guesses did not work the way I wanted it to; 
+          the answer feedback appeared for a second in gamereply div then disappeared 
+		  <button>Submit</button>
+          -->
+          <!--COMMENT - FRANK
+          Answer #3
+          Same as #2 above. Pressing a button with the type of submit lets the form know to submit and send information to another page or the current page.
+          Essentially the browser reloads the page.
+          It is better with buttons to set their type to button rather than submit.
+          -->
+          
+		  <button id="startover" onclick="startOver()";>Start Over</button>
+		  <div id="gamereply">
+		  <p>Please enter a number between 1 and 50 inclusive.</p>
+		  
+		  <!--this div is where feedback about the user's answer appears; it also, for now, shows the answer because I was testing the code to make sure the random number stayed the same when it needed to; in initial code, a new random number would be generated when it actually needed to stay the same for the current guess attempts-->
+		  
+		  </div>
+	   </form>
+    </body>
+
+</html>

@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping List</title>
+	<link type="text/css" rel="stylesheet" href="liststyle.css"/>
+    <script type="text/javascript" src = "addlistitems.js" ></script>
+	
+</head>
+<body onload="prelim()";> <!--onload applies to second list at bottom-->
+    
+    <h2>Shopping List</h2>
+	<br/>
+	<h3>First List</h3>
+    <form id="myList">
+     
+        <input type="text" name="newentry" ondblclick="addItems()";/>  
+        
+        <br />
+	    <!--Using submit button to submit item does not work; it appears for a second then disappears 
+        <button>Submit</button>-->
+        <!-- COMMENT - FRANK
+        The default functionality of the submit button in a form is to submit the form to the specified
+        page and if no parameters are set it reloads the page which is why it looked like it was working
+        but disappeared. Look into e.preventDefault();
+        -->
+        <br />
+    </form>
+	<p>Double click in the text box after you've typed your entry to submit it.</p>
+	<ol id="livelist">
+	<!--these are the 2 items that are supposed to be hard-coded-->
+	  <li><input type="checkbox" /><label contenteditable="true">milk</label></li>
+	  <!--I tried to use the contenteditable attribute above to enable users to 
+	  edit entries they've submitted. It lets me add text BEFORE "milk" but won't let me delete the word "milk." Why is that? And is there a better way to enable text editing? -->
+      <!-- COMMENT - FRANK
+      This has to do with direct vs delegated events.
+      Direct events are targeting specific elements that exist when the code is initially run and event listeners are set.
+      $('div').click(function(){ /* Do something */ } );
+      Delegated events are targeting parent elements which will always exist and when the event happens on the parent it checks to see if the event actually happened on the child 
+      within the parent and if so runs the function.
+      $('div').on('click','p',function(){/*do something */});
+      http://jsfiddle.net/FrankTrog/6aUP2/
+      -->
+	  <li><input type="checkbox" /><label>eggs</label></li>
+	</ol>
+	<div id="newlist">
+	<!--this is where entries form the top text box appear-->
+	
+	</div>
+	<br/>
+	<br/>
+	<h3>Second List (uses array)</h3>
+	<form id="secList">
+	    <input type="text" name="secentry" ondblclick="testItems()"; />  
+        
+        <br />
+	    <!--Using submit button to submit item does not work; it appears for a second then disappears 
+        <button>Add</button>-->
+        <!-- COMMENT - FRANK  Same reason as stated above earlier -->
+        <br />
+    </form>
+	
+	<div id="newdiv">
+	<!--this is where entries form the bottom text box appear-->
+	<p>Double click in the text box after you've typed your entry to submit it.</p>
+	</div>
+
+
+</body>
+</html>
+
