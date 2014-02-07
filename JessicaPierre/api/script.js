@@ -54,6 +54,7 @@ var account_id = '976933';
 			    $('.modal-header').append('<p><img src=' + images.data.images[x].small_thumb.url + ' /></p>');
             }
             
+			$('#searchbox').val("");
 			  
         });
 	
