@@ -1,50 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link type="text/css" rel="stylesheet" href=""/>
-    <title>API Web Application</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src = "script2.js" ></script>
-	<style>
-	  .modal-header img {float:left;vertical-align:sub;}
-	</style>
+<title>API Web Application</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="script.js" ></script>
+<style>
+div.modal-header{
+	text-align:center;
+}
+p{
+	display: inline-block;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	text-align: center;
+	vertical-align: middle;
+}
+</style>
 </head>
 <body>
-    <div>
-     <p>Type in a search term and press Submit or press Enter.</p>
-	
-<div id="search-form" class="modal hide fade">
+<div>
+  <p>Type in a search term and press Submit or press Enter.</p>
+  <div id="search-form" class="modal hide fade">
     <form id="myList">
-     
-        <input id="searchbox" type="text" name="newentry" />  
-                
-	    <input type="submit" />
-        
+      <input id="searchbox" type="text" name="newentry" />
+      <input type="submit" />
     </form>
     <div class="modal-header">
       <h3>View Images</h3>
     </div>
-    
-
-        <!-- this div will be populated with search results -->
-        <div class="well-hide" id="results-holder">
-            <ul class="thumbnails" id="results">
-            </ul>
-        </div>                
-    </div>
-	<br/>
-    <div>
-       <img src="http://help.bigstockphoto.com/attachments/token/c703i5m6arysrey/?name=bigstock-black-medium.png" alt="Bigstock">
-      </div>
+  </div>
+  <div> <img src="http://help.bigstockphoto.com/attachments/token/c703i5m6arysrey/?name=bigstock-black-medium.png" alt="Bigstock"> </div>
 </div>
-
-
-    
-</div>
-	  
-
-     </div>
-	 
-
 </body>
 </html>
