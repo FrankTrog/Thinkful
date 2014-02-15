@@ -99,6 +99,9 @@ $(document).ready(function(){
 			crossDomain: true,
 			dataType: 'json',
 			url: getMapUrl,
+			xhrFields:{
+				withCredentials: false
+			},
 			success: function(resp) {
 				democracyMap(resp);
 			},
