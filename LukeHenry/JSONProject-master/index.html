@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="application.js"></script>
+		<title>Who's your politician?</title>
+	</head>
+	<body>
+		<div id="topBanner">
+			<img id="house" src="images/house.png"/>
+			<h1>Who Represents YOU?</h1>
+			<img id="senate" src="images/senate.png"/>
+		</div>
+		<div id="container">
+			<div class="bckgnd" id="intro">
+				<p>It's a question that most people cannot answer correctly. If you are like the people in this video, this website is for you.</p>
+				<iframe width="350" height="197" src="http://www.youtube.com/embed/6ilo6walCjs" frameborder="0" allowfullscreen></iframe>
+				<p>Knowing who represents you is a fundamental aspect of this federalist republic we call the USA.  Allow us to help you learn just a little bit about who represents you and what they are all about.  There will also be links to more in-depth material, if you are interested.  To get started, fill in your location (or a location of interest) in the box below.  You can use city names, zip codes, or street addresses.</p>
+				<div id="locationBox">
+					<input type="text" class="getLocation" placeholder="   Your Location" id="location"></input>
+					<button type="submit" class="getLocation" id="submit">Submit</button>
+				</div>
+			</div>
+			<div class="bckgnd" id="waiting">
+				<img src="images/loading.gif"/>
+			</div>
+			<div class="bckgnd" id="results">
+				<div class="person">
+					<h1 id="resultsTitle">These People Do</h1>
+					<div class="congressperson" id="representative">
+						<img class="face" src="images/yoder.jpg" id="repFace" alt="representative"/>
+						<h2 class="title" id="repTitle">Representative Kevin Yoder</h2>
+						<ul class="info" id="repInfo">
+							<li>Party: Republican</li>
+						<ul>
+					</div>
+					<div class="congressperson" id="senator1">
+						<img class="face" src="images/yoder.jpg" id="sen1Face" alt="representative"/>
+						<h2 class="title" id="sen1Title">Senator Jerry Moran</h2>
+						<ul class="info" id="sen1Info">
+							<li>Party: Republican</li>
+						<ul>
+					</div>
+					<div class="congressperson" id="senator2">
+						<img class="face" src="images/yoder.jpg" id="sen2Face" alt="representative"/>
+						<h2 class="title" id="sen2Title">Senator Pat Roberts</h2>
+						<ul class="info" id="sen2Info">
+							<li>Party: Republican</li>
+						<ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<body>
+</html>
+
