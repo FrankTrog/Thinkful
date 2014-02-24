@@ -73,3 +73,18 @@ function createMarker(place) {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+$.ajax({
+    url:'https://maps.googleapis.com/maps/api/place/nearbysearch/',
+    data:{},
+    dataType: jsonp,
+    success: function(data){
+        console.log('success',data)
+    },
+    error: function(data){
+        console.log('error',data)
+    },
+    complete: function(data){
+        console.log('complete',data)
+    }
+})
